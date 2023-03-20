@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./layout.css" type="text/css" media="screen" />
+    <title>Nathaniel Bloch - Elevator JS</title>
+  </head>
+  <body>
+    <div>
+        <div class="set-ctr">
+            <h2>Set Up Game:</h2>
+            <form id="setForm">
+                <label for="elevatorsnumber">Number of elevators</label>
+                <input type="range" name="elevatorsnumber" id="elevatorsnumber" min="1" max="10" value="5" onchange="showElev(this.value);"><span class="elevatoroutput">5</span>
+
+                <label for="floorsnumber">Number of floors</label>
+                <input type="range" name="floorsnumber" id="floorsnumber" min="2" max="15" value="10" onchange="showFloors(this.value);"><span class="flooroutput">10</span>
+
+                <input type="submit" value="Set New Game">
+            </form>
+        </div>
+        <div class="main-ctr">
+            <h2>Elevator Exercice</h2>
+            <div class="game-ctr">
+                <div class="floorlvl floor9">   <span>9</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(9)">Call</button> </div>
+                <div class="floorlvl floor8">   <span>8</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(8)">Call</button> </div>
+                <div class="floorlvl floor7">   <span>7</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(7)">Call</button> </div>
+                <div class="floorlvl floor6">   <span>6</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(6)">Call</button> </div>
+                <div class="floorlvl floor5">   <span>5</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(5)">Call</button> </div>
+                <div class="floorlvl floor4">   <span>4</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(4)">Call</button> </div>
+                <div class="floorlvl floor3">   <span>3</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(3)">Call</button> </div>
+                <div class="floorlvl floor2">   <span>2</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(2)">Call</button> </div>
+                <div class="floorlvl floor1">   <span>1</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton" onclick="callElev(1)">Call</button> </div>
+                <div class="floorlvl floor0">   <span>G</span>   <div class="elevcol elev1"></div>  <div class="elevcol elev2"></div> <div class="elevcol elev3"></div>    <div class="elevcol elev4"></div>   <div class="elevcol elev5"></div> <button class="callbutton arrived" disabled="disabled" onclick="callElev(0)">Arrived</button> </div>
+                <div class="elevobj elevobj1"><img src="./elevicon.svg" alt=""></div>
+                <div class="elevobj elevobj2"><img src="./elevicon.svg" alt=""></div>
+                <div class="elevobj elevobj3"><img src="./elevicon.svg" alt=""></div>
+                <div class="elevobj elevobj4"><img src="./elevicon.svg" alt=""></div>
+                <div class="elevobj elevobj5"><img src="./elevicon.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>    
+  </body>
+</html>

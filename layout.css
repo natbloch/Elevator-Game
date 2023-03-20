@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body > div{
+    width: fit-content;
+    margin: 25px auto 0;
+}
+
+
+/*--------------  Set section  ---------------*/
+
+.set-ctr{
+    text-align: center;
+}
+
+.set-ctr form label{
+    width: 300px;
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.set-ctr form span{
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.set-ctr form input[type="range"]{
+    margin-left: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.set-ctr form input[type="submit"]{
+    padding: 3px 15px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.set-ctr form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+
+
+/*---------------  Game Section  ------------------*/
+
+.main-ctr{
+    margin-top: 20px;
+}
+
+.main-ctr h2{
+    text-align: center;
+}
+
+.main-ctr .game-ctr{
+    margin-top: 10px;
+    position: relative;
+}
+
+.main-ctr .game-ctr .floorlvl{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-ctr .game-ctr .floorlvl span{
+    width:40px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+}
+
+.main-ctr .game-ctr .floorlvl .elevcol {
+    width: 160px;
+    height: 90px;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 80px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.callbutton{
+    width:100px;
+    margin-left: 5px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: green;
+    color:#FFF;
+    text-align: center;
+    align-self: center;
+}
+
+.callbutton:hover{
+    cursor: pointer;
+    background-color: #FFF;
+    color:green;
+}
+
+.callbutton.arrived{
+    background-color: #FFF;
+    color:green;
+}
+
+.callbutton.waiting{
+    background-color: red;
+    color:#FFF;
+    content:"Waiting..";
+}
+
+.callbutton.arrived:hover , .callbutton.waiting:hover{
+    cursor: not-allowed;
+}
+
+
+.game-ctr .elevobj {
+    width: 54px;
+    height: 55px;
+    position: absolute;
+    bottom: 15px;
+    left: 90px;
+}
+
+
+
+/* 
+90+y*161
+*/
+
+.game-ctr .elevobj img{
+    width: 100%;
+}
+
+.game-ctr .elevobj.arrived img {
+    /*make svg green*/
+    filter: invert(27%) sepia(93%) saturate(1179%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.game-ctr .elevobj.busy img {
+    /*make svg red*/
+    filter: invert(26%) sepia(141%) saturate(1134%) hue-rotate(-26deg) brightness(100%) contrast(119%);
+}
+
+
